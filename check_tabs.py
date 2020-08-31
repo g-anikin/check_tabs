@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import sys
+
 import pathlib
 import lz4.block
 import json
