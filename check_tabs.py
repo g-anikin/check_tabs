@@ -16,7 +16,10 @@ for f in files:
     j = json.loads(b)
     for w in j['windows']:
         for t in w['tabs']:
-            i = t['index'] - 1
+            try:
+                i = t['index'] - 1
+            except:
+                pass
             site = t['entries'][i]['url'].split('/')
             try:
                 unique_list.append(socket.gethostbyname(site[2]))
