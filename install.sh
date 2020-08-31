@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#Update apt database
+sudo apt update
 #Installing pip3 module
 sudo apt install python3-pip
 #Intalling requirements for python3
